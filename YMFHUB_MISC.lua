@@ -303,7 +303,7 @@ elseif placeId == 4442272183 then
 elseif placeId == 7449423635 then
     Sea3 = true
 end
-local OrionLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/memaybeohub/Function-Scripts/main/OrionLib.lua")))()
+local OrionLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/Tgoduiem/YMF/refs/heads/main/OrionLib.lua")))()
 function MoonTextureId()
     if Sea1 then
         return game:GetService("Lighting").FantasySky.MoonTextureId
