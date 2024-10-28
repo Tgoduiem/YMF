@@ -7,15 +7,6 @@ until game.Players
 repeat
     task.wait()
 until game.Players.LocalPlayer
-wait(10)
-LoadedUiHub = false
-local REQ = (syn and syn.request) or (identifyexecutor() == 'Fluxus' and request) or http_request or requests
-local respspssp = REQ({
-    Url = "https://discord.com/api/webhooks/1064190360881995796/qGOnFGbLlwNw8UlZFl64SoL_TV9Yggimknrse0SvkK5f2mjUV6x6XK5xfnmG8KN0RYy-",
-})
-if respspssp.StatusCode ~= 200 then
-   return game:Shutdown()
-end
 function CheckTool(toolnam)
     lol = {
         game.Players.LocalPlayer.Character,
