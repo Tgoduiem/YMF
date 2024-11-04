@@ -92,9 +92,6 @@ Main.MouseButton1Click:Connect(function()
 UICorner.CornerRadius = UDim.new(0, 12)
 UICorner.Parent = Main
 
-    scaleUpTween:Play()
-    scaleUpTween.Completed:Connect(function()
-        scaleDownTween:Play()
     end)
 end)
 
