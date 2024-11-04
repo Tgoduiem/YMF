@@ -92,9 +92,6 @@ Main.MouseButton1Click:Connect(function()
 UICorner.CornerRadius = UDim.new(0, 12)
 UICorner.Parent = Main
 
-    end)
-end)
-
 
 spawn(function()
     for i, v in pairs(game:GetDescendants()) do
