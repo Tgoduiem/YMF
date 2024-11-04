@@ -87,10 +87,19 @@ MakeDraggable(Main,Main)
 Main.MouseButton1Click:Connect(function()
     game:GetService("VirtualInputManager"):SendKeyEvent(true,"LeftControl",false,game.Players.LocalPlayer.Character.HumanoidRootPart)
     game:GetService("VirtualInputManager"):SendKeyEvent(false,"LeftControl",false,game.Players.LocalPlayer.Character.HumanoidRootPart)
-end)
+
 
 UICorner.CornerRadius = UDim.new(0, 12)
 UICorner.Parent = Main
+
+ local scaleUpTween = TweenService:Create(ImageButton, TweenInfo.new(0.1), { Size = UDim2.new(0, 55, 0, 55) })
+    local scaleDownTween = TweenService:Create(ImageButton, TweenInfo.new(0.1), { Size = UDim2.new(0, 50, 0, 50) })
+
+    scaleUpTween:Play()
+    scaleUpTween.Completed:Connect(function()
+        scaleDownTween:Play()
+    end)
+end)
 
 
 spawn(function()
