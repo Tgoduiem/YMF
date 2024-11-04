@@ -105,9 +105,7 @@ spawn(function()
             v.BlastRadius = 1
         elseif v:IsA("Fire") or v:IsA("SpotLight") or v:IsA("Smoke") then
             v.Enabled = false
-        end
-    end
-end)
+       
 
 if game.PlaceId == 2753915549 then
     World1 = true
